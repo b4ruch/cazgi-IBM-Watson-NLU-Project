@@ -46,10 +46,10 @@ class App extends React.Component {
     let ret = "";
 
     //used for final build
-    // let url = ".";
+    let url = ".";
 
     //used for testing in development
-    let url = "http://localhost:8080";
+    // let url = "http://localhost:8080";
 
     if (this.state.mode === "url") {
       url = url + "/url/sentiment?url=" + document.getElementById("textinput").value;
@@ -96,10 +96,10 @@ class App extends React.Component {
     this.setState({ sentiment: false });
     let ret = "";
     //used for final build
-    // let url = ".";
+    let url = ".";
 
     //used for testing in development
-    let url = "http://localhost:8080";
+    // let url = "http://localhost:8080";
 
     if (this.state.mode === "url") {
       url = url + "/url/emotion?url=" + document.getElementById("textinput").value;
